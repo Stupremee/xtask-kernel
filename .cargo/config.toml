@@ -1,0 +1,6 @@
+[target.riscv64gc-unknown-none-elf]
+runner = "cargo run -p xtask --"
+
+[alias]
+build-rv64 = "run -p kernel -Zbuild-std=core,alloc --target riscv64gc-unknown-none-elf --"
+run-rv64 = "run -p kernel -Zbuild-std=core,alloc --target riscv64gc-unknown-none-elf -- run"
